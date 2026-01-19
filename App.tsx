@@ -34,53 +34,7 @@ const App: React.FC = () => {
 
         <Partners />
         
-        {/* Transformation Section */}
-        <section id="solutions" className="py-24 bg-slate-50">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-16">
-              <div className="lg:w-1/2">
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 w-24 h-24 bg-brand/10 rounded-full blur-3xl"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=2070" 
-                    alt="Modern Office" 
-                    className="rounded-2xl shadow-2xl relative z-10"
-                  />
-                </div>
-              </div>
-              <div className="lg:w-1/2">
-                <h2 className="text-sm font-bold tracking-widest text-brand uppercase mb-4">Core Strategy</h2>
-                <h3 className="text-4xl font-bold text-slate-900 mb-8 leading-tight">
-                  Accelerating Your Journey to a Modern Cloud Era
-                </h3>
-                <div className="space-y-6">
-                  {[
-                    { title: "Global Scale", desc: "Deployed in 60+ regions across all major public cloud providers." },
-                    { title: "Security First", desc: "Built-in compliance and security controls for regulated industries." },
-                    { title: "Automation Driven", desc: "Reduce operational overhead with intelligent automation scripts." }
-                  ].map((item, i) => (
-                    <div key={i} className="flex space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-white rounded-lg shadow-md flex items-center justify-center">
-                        <svg className="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-slate-900">{item.title}</h4>
-                        <p className="text-slate-600">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <button className="mt-10 bg-slate-900 text-white px-8 py-4 rounded-md font-bold transition-all hover:bg-brand">
-                  Read Case Studies
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <Stats />
+        
 
         {/* CTA Section */}
         <section className="py-24 bg-white relative overflow-hidden">
