@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spektra Systems | Leading Digital Transformation</title>
 
-    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -13,9 +12,9 @@
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
     "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
   }
 }
@@ -23,10 +22,9 @@
 </head>
 
   <body class="bg-white font-sans">
-    <!-- ✅ React mount point -->
     <div id="root"></div>
 
-    <!-- ✅ Vite entry file (MOST IMPORTANT LINE) -->
-    <script type="module" src="/src/index.tsx"></script>
+    <!-- ✅ FIXED PATH -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
